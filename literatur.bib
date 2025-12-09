@@ -6031,6 +6031,24 @@
   crossref =     "socs2018",
 }
 
+@inproceedings{fieldsend-gecco2020,
+  author = {Fieldsend, Jonathan. E.},
+  title = {Data structures for non-dominated sets: implementations and empirical assessment of two decades of advances},
+  year = {2020},
+  isbn = {9781450371285},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3377930.3390150},
+  doi = {10.1145/3377930.3390150},
+  abstract = {Many data structures have been developed over the last two decades for the storage and efficient update of unconstrained sets of mutually non-dominating solutions. Typically, analysis has been provided in the original works for these data structures in terms of worst/average case complexity performance. Often, however, other aspects such as rebalancing costs of underlying data structures, cache sizes, etc., can also significantly affect behaviour. Empirical performance comparison has often (but not always) been limited to run-time comparison with a basic linear list. No comprehensive comparison between the different specialised data structures proposed in the last two decades has thus far been undertaken. We take significant strides in addressing this here. Eight data structures from the literature are implemented within the same overarching open source Java framework. We additionally highlight and rectify some errors in published work --- and offer additional efficiency gains. Run-time performances are compared and contrasted, using data sequences embodying a number of different characteristics. We show that in different scenarios different data structures are preferable, and that those with the lowest big O complexity are not always the best performing. We also find that performance profiles can vary drastically with computational architecture, in a non-linear fashion.},
+  booktitle = {Proceedings of the 2020 Genetic and Evolutionary Computation Conference},
+  pages = {489–497},
+  numpages = {9},
+  keywords = {real-time statistics, real-time analysis, data structures, computational efficiency},
+  location = {Canc\'{u}n, Mexico},
+  series = {GECCO '20}
+}
+
 @Article{fikes-et-al-aij1972,
   author =       "Richard E. Fikes and Peter E. Hart and Nils J. Nilsson",
   title =        "Learning and Executing Generalized Robot Plans",
@@ -14582,6 +14600,24 @@ numpages = {16}
   pages =        "105--118"
 }
 
+@inproceedings{islam-et-al-cikm2016,
+    author = {Islam, Md. Saiful and Liu, Chengfei and Rahayu, Wenny and Anwar, Tarique},
+    title = {Q+Tree: An Efficient Quad Tree based Data Indexing for Parallelizing Dynamic and Reverse Skylines},
+    year = {2016},
+    isbn = {9781450340731},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/2983323.2983764},
+    doi = {10.1145/2983323.2983764},
+    abstract = {Skyline queries play an important role in multi-criteria decision making applications of many areas. Given a dataset of objects, a skyline query retrieves data objects that are not dominated by any other data object in the dataset. Unlike standard skyline queries where the different aspects of data objects are compared directly, dynamic and reverse skyline queries adhere to the around-by semantics, which is realized by comparing the relative distances of the data objects w.r.t. a given query. Though, there are a number of works on parallelizing the standard skyline queries, only a few works are devoted to the parallel computation of dynamic and reverse skyline queries. This paper presents an efficient quad-tree based data indexing scheme, called Q+Tree, for parallelizing the computations of the dynamic and reverse skyline queries. We compare the performance of Q+Tree with an existing quad-tree based indexing scheme. We also present several optimization heuristics to improve the performance of both of the indexing schemes further. Experimentation with both real and synthetic datasets verifies the efficiency of the proposed indexing scheme and optimization heuristics.},
+    booktitle = {Proceedings of the 25th ACM International on Conference on Information and Knowledge Management},
+    pages = {1291–1300},
+    numpages = {10},
+    keywords = {aggressive partitioning, dynamic skyline, load balancing, parallel computation, quad tree, reverse skyline},
+    location = {Indianapolis, Indiana, USA},
+    series = {CIKM '16}
+}
+
 @InProceedings{salerno-et-al-ipc2023,
   author =       "Mauricio Salerno and Raquel Fuentetaja and Jendrik Seipp",
   title =        "{Spock}: {Fast Downward Stone Soup} with Redundant Action Elimination",
@@ -15304,6 +15340,23 @@ numpages = {16}
   publisher =    "Zenodo",
   year =         "2024",
   howpublished = "\url{https://doi.org/10.5281/zenodo.13361692}"
+}
+
+@InProceedings{selke-balke-debs2011,
+  author="Selke, Joachim
+  and Balke, Wolf-Tilo",
+  editor="Hameurlain, Abdelkader
+  and Liddle, Stephen W.
+  and Schewe, Klaus-Dieter
+  and Zhou, Xiaofang",
+  title="SkyMap: A Trie-Based Index Structure for High-Performance Skyline Query Processing",
+  booktitle="Database and Expert Systems Applications",
+  year="2011",
+  publisher="Springer Berlin Heidelberg",
+  address="Berlin, Heidelberg",
+  pages="350--365",
+  abstract="Skyline queries have become commonplace in many applications. The main problem is to efficiently find the set of Pareto-optimal choices from a large amount of database items. Several algorithms and indexing techniques have been proposed recently, but until now no indexing technique was able to address all problems for skyline queries in realistic applications: fast access, superior scalability even for higher dimensions, and low costs for maintenance in face of data updates. In this paper we design and evaluate a trie-based indexing technique that solves the major efficiency bottlenecks of skyline queries. It scales gracefully even for high dimensional queries, is largely independent of the underlying data distributions, and allows for efficient updates. Our experiments on real and synthetic datasets show a performance increase of up to two orders of magnitude compared to previous indexing techniques.",
+  isbn="978-3-642-23091-2"
 }
 
 @Article{selman-et-al-aij1996,
@@ -18537,4 +18590,15 @@ numpages = {16}
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
 
-
+@article{Ren_Zhan_Rathinam_Likhachev_Choset_2022, 
+  title={Enhanced Multi-Objective A* Using Balanced Binary Search Trees}, 
+  volume={15},
+  url={https://ojs.aaai.org/index.php/SOCS/article/view/21764},
+  DOI={10.1609/socs.v15i1.21764},
+  number={1}, 
+  journal={Proceedings of the International Symposium on Combinatorial Search}, 
+  author={Ren, Zhongqiang and Zhan, Richard and Rathinam, Sivakumar and Likhachev, Maxim and Choset, Howie}, 
+  year={2022},
+  month={Jul.},
+  pages={162-170} 
+}
